@@ -113,6 +113,29 @@ public class MangerClassTest {
     }
 
     @Test
+    public void testShowLastFilmsDefaultBoundaryValuesPlusOne() {
+        FilmsManager manager = new FilmsManager();
+
+        manager.add("TaxiI");
+        manager.add("TaxiII");
+        manager.add("TaxiIII");
+        manager.add("TaxiIV");
+        manager.add("TaxiV");
+        manager.add("TaxiVI");
+        manager.add("TaxiVII");
+        manager.add("TaxiVIII");
+        manager.add("TaxiIX");
+        manager.add("TaxiX");
+        manager.add("TaxiXI");
+
+
+        String[] expected = {"TaxiXI", "TaxiX", "TaxiIX", "TaxiVIII", "TaxiVII", "TaxiVI", "TaxiV", "TaxiIV", "TaxiIII", "TaxiII" };
+        String[] actual = manager.showLastFilms();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
     public void testShowLastFilmsWithParameterEmpty() {
         FilmsManager manager = new FilmsManager(4);
 
@@ -151,7 +174,7 @@ public class MangerClassTest {
     }
 
     @Test
-    public void ttestShowLastFilmsWithParameterBoundaryValuesEquals() {
+    public void testShowLastFilmsWithParameterBoundaryValuesEquals() {
         FilmsManager manager = new FilmsManager(4);
 
         manager.add("TaxiI");
@@ -161,6 +184,22 @@ public class MangerClassTest {
 
 
         String[] expected = {"TaxiIV", "TaxiIII", "TaxiII", "TaxiI"};
+        String[] actual = manager.showLastFilms();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+    @Test
+    public void testShowLastFilmsWithParameterBoundaryValuesPlusOne() {
+        FilmsManager manager = new FilmsManager(4);
+
+        manager.add("TaxiI");
+        manager.add("TaxiII");
+        manager.add("TaxiIII");
+        manager.add("TaxiIV");
+        manager.add("TaxiV");
+
+
+        String[] expected = { "TaxiV", "TaxiIV", "TaxiIII", "TaxiII" };
         String[] actual = manager.showLastFilms();
 
         Assertions.assertArrayEquals(expected, actual);

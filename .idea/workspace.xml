@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5749e4-6eeb-453f-8e5a-840f36a7c363" name="Changes" comment="" />
+    <list default="true" id="2f5749e4-6eeb-453f-8e5a-840f36a7c363" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/managerClass/FilmsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/managerClass/FilmsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MangerClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MangerClassTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +60,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MangerClassTest">
+  <component name="RunManager" selected="JUnit.MangerClassTest.testShowLastFilmsDefaultBoundaryValuesPlusOne">
     <configuration name="MangerClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FilmsManager" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,21 +70,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MangerClassTest.testAddAndShowFilmsOneElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FilmsManager" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MangerClassTest" />
-      <option name="METHOD_NAME" value="testAddAndShowFilmsOneElement" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MangerClassTest.testShowLastFilmsDefaultBoundaryValuesPlusOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FilmsManager" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MangerClassTest" />
       <option name="METHOD_NAME" value="testShowLastFilmsDefaultBoundaryValuesPlusOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MangerClassTest.testShowLastFilmsWithParameterBoundaryValuesPlusOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmsManager" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MangerClassTest" />
+      <option name="METHOD_NAME" value="testShowLastFilmsWithParameterBoundaryValuesPlusOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MangerClassTest.testShowLastFilmsDefaultBoundaryValuesPlusOne" />
+        <item itemvalue="JUnit.MangerClassTest.testShowLastFilmsWithParameterBoundaryValuesPlusOne" />
         <item itemvalue="JUnit.MangerClassTest" />
         <item itemvalue="JUnit.MangerClassTest.testShowLastFilmsWithParameterEmptyOneElement" />
         <item itemvalue="JUnit.MangerClassTest.testShowLastFilmsWithParameterEmpty" />
-        <item itemvalue="JUnit.MangerClassTest.testAddAndShowFilmsOneElement" />
-        <item itemvalue="JUnit.MangerClassTest.testShowLastFilmsDefaultBoundaryValuesPlusOne" />
       </list>
     </recent_temporary>
   </component>
@@ -137,13 +144,18 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/managerClass/FilmsManager.java</url>
-          <line>31</line>
-          <properties class="ru.netology.managerClass.FilmsManager" method="showLastFilms">
+          <url>file://$PROJECT_DIR$/src/test/java/MangerClassTest.java</url>
+          <line>115</line>
+          <properties class="MangerClassTest" method="testShowLastFilmsDefaultBoundaryValuesPlusOne">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MangerClassTest.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
